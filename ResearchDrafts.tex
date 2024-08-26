@@ -88,7 +88,7 @@
 			}
 		\end{tikzpicture}
 	\end{minipage}
-
+	
 	% Claim 1
 	\begin{clm}
 		The metric dimension of the Franklin Graph is 4.
@@ -162,7 +162,6 @@
 	\end{clm}
 	\begin{proof}
 		We begin by giving the chaser a strategy to win in 3 turns with 2 probes. The chaser should begin by probing the vertices $E$ and $H$.
-		
 		\begin{center}
 			\begin{tikzpicture}[scale=2.75]
 				\draw[white] (225:1.6) rectangle (45:1.6);
@@ -209,14 +208,13 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		
 		This provides us with 6 different distances, $(0,3),(3,0),(1,2),(2,1),(2,3)$ and $(3,2)$. Consider the fact that $(0,3)$ and $(3,0)$ are unique distances. It follows then that if the runner is on vertices $E$ or $H$, it must be the case that the runner will be caught. This leaves us with 4 different non-unique distances of $(1,2),(2,1),(2,3),$ and $(3,2)$. We will now proceed by cases.
 		
-		\textbf{Case 1:} Consider the case where the chaser has been returned a distance of $(1,2)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $A,F$, or $K$. Recall that runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,C,G,I,L$. Thus, the runner could potentially be located at any of the vertices $A,B,C,F,G,I,K,L$.
+		\textbf{Case 1:} Consider the case where the chaser has been returned a distance of $(1,2)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $A,F$, or $K$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,C,G,I,L$. Thus, the runner could potentially be located at any of the vertices $A,B,C,F,G,I,K,L$.
 		
 		The chaser should now probe vertices $F$ and $K$.
 		
-			\begin{center}
+		\begin{center}
 			\begin{tikzpicture}[scale=2.75]
 				\draw[white] (225:1.6) rectangle (45:1.6);
 				\foreach \x/\y in
@@ -309,7 +307,7 @@
 			\end{tikzpicture}
 		\end{center}
 		
-		This provides us with 7 different distances, $(1,3),(0,2),(3,1),(2,2),(3,3),(2,0)$ and $(1,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides us with 7 different distances, $(1,3),(0,2),(3,1),(2,2),(3,3),(2,0)$, and $(1,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Subcase 1.2:} Consider the case where the chaser has been returned a distance of $(3,1)$ from probing vertices $F$ and $K$. Then the runner must either be on vertex $I$ or vertex $L$. Recall that the runner cannot move on to vertex $F$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $D,H,J$. Thus, the runner could potentially be located at any of the vertices $D,H,I,J,L$.
 		
@@ -359,7 +357,7 @@
 		This provides us with 5 different distances, $(0,2),(2,2),(1,1),(2,0)$ and $(3,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		% needs an alternative approach
-		\textbf{Case 2:} Consider the case where the chaser has been returned a distance of $(2,1)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $B,G$, or $L$. Recall that runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,B,D,F,G,J,K,L$.
+		\textbf{Case 2:} Consider the case where the chaser has been returned a distance of $(2,1)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $B,G$, or $L$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,B,D,F,G,J,K,L$.
 		
 		The chaser should now probe vertices $G$ and $L$.
 		\begin{center}
@@ -404,14 +402,148 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This again provides us with 6 different distances, $(3,3),(2,2),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(3,3),(2,2),(0,2)$ and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,G,$ or $L$, it must be the case that the runner will be caught. This leaves us with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
+		This again provides us with 6 different distances, $(3,3),(2,2),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(3,3),(2,2),(0,2)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,G,$ or $L$, it must be the case that the runner will be caught. This leaves us with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
 		
 		\textbf{Subcase 2.1} Consider the case where the chaser has been returned a distance of $(1,3)$ from probing vertices $F$ and $K$. Then the runner must either be on vertex $C$ or vertex $G$. Recall that the runner cannot move on to vertex $F$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $A,D,F,H,J$. Thus, the runner could potentially be located at any of the vertices $A,C,D,G,H,J$.
 		
-		\textbf{Case 3:} Consider the case where the chaser has been returned a distance of $(2,3)$ from the first probes on vertices $E$ and $H$. Then the runner must be at vertex $C$ or vertex $I$. Recall that runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,B,D,F,G,J,K,L$.
+		\textbf{Case 3:} Consider the case where the chaser has been returned a distance of $(2,3)$ from the first probes on vertices $E$ and $H$. Then the runner must be at vertex $C$ or vertex $I$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,C,D,F,I,J,K,$.
 		
-		\textbf{Case 4:} Consider the case where the chaser has been returned a distance of $(3,2)$ from the first probes on vertices $E$ and $H$.
+		The chaser should now probe vertices $C$ and $L$.
+		\begin{center}
+			\begin{tikzpicture}[scale=2.75]
+				\draw[white] (225:1.6) rectangle (45:1.6);
+				\foreach \x/\y in
+				{D/60, F/180, J/300}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				\foreach \x/\y in
+				{C/120, G/0, I/240}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				
+				\foreach \x/\y in
+				{H/0, B/60, A/120, E/180, K/240, L/300}{
+					\coordinate(\x) at (\y:1);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				% inner ring (right)
+				\node at (37.5:0.75){$3,3$*}; % D/60
+				\node at (320:0.75){$1,1$*}; % J/300
+				
+				% inner ring (left)
+				\node at (142.5:0.75){$0,2$*}; % C/135
+				\node at (167:0.7){$1,3$}; % F/180
+				\node at (220:0.75){$2,2$*}; % I/225
+				
+				% outer ring
+				\node at (120:1.2){$1,3$}; % A/120
+				\node at (240:1.25){$3,1$*}; % K/240
+				\node at (300:1.25){$2,0$*}; % L/300
+				
+				\foreach \x/\y in 
+				{I/D,D/B,H/G,G/F,F/C,C/J,J/I,A/C,E/F,D/G,K/I,L/J}{
+					\draw (\x)--(\y);
+				}
+				\draw circle (1);
+			\end{tikzpicture}
+		\end{center}
+		This provides us with 7 different distances, $(1,3),(0,2),(3,3),(2,2), (1,1), (3,1)$ and $(2,0)$. Consider the fact that $(0,2),(3,3),(2,2),(1,1),(3,1)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves us with 1  non-unique distances of $(1,3)$.
 		
+		The chaser should now probe vertices $A$ and $K$.
+		\begin{center}
+			\begin{tikzpicture}[scale=2.75]
+				\draw[white] (225:1.6) rectangle (45:1.6);
+				\foreach \x/\y in
+				{D/60, F/180, J/300}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				\foreach \x/\y in
+				{C/120, G/0, I/240}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				
+				\foreach \x/\y in
+				{H/0, B/60, A/120, E/180, K/240, L/300}{
+					\coordinate(\x) at (\y:1);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				% inner ring (right)
+				\node at (13:0.7){$3,3$*}; % G/0
+				
+				% inner ring (left)
+				\node at (167:0.7){$2,2$*}; % F/180
+				
+				% outer ring
+				\node at (120:1.2){$0,2$*}; % A/120
+				\node at (60:1.2){$1,3$*}; % B/60
+				\node at (180:1.4){$1,1$*}; % E/180
+				\node at (240:1.25){$2,0$*}; % K/240
+				
+				\foreach \x/\y in 
+				{I/D,D/B,H/G,G/F,F/C,C/J,J/I,A/C,E/F,D/G,K/I,L/J}{
+					\draw (\x)--(\y);
+				}
+				\draw circle (1);
+			\end{tikzpicture}
+		\end{center}
+		This provides us with 6 different distances, $(0,2),(1,3),(1,1),(2,2),(3,3)$ and $(2,0)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 4:} Consider the case where the chaser has been returned a distance of $(3,2)$ from the first probes on vertices $E$ and $H$. Then the runner must be at vertex $D$ or vertex $J$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $B,C,G,I,L$. Thus, the runner could potentially be located at any of the vertices $B,C,D,G,I,J,L$.
+		
+		The chaser should now probe vertices $D$ and $K$.
+		\begin{center}
+			\begin{tikzpicture}[scale=2.75]
+				\draw[white] (225:1.6) rectangle (45:1.6);
+				\foreach \x/\y in
+				{D/60, F/180, J/300}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				\foreach \x/\y in
+				{C/120, G/0, I/240}{
+					\coordinate(\x) at (\y:0.5);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				
+				\foreach \x/\y in
+				{H/0, B/60, A/120, E/180, K/240, L/300}{
+					\coordinate(\x) at (\y:1);
+					\fill (\x) circle (0.5mm);
+				}
+				
+				% inner ring (right)
+				\node at (13:0.7){$1,3$}; % G/0
+				\node at (37.5:0.75){$0,2$*}; % D/60
+				\node at (320:0.75){$2,2$*}; % J/300
+				
+				% inner ring (left)
+				\node at (142.5:0.75){$3,3$*}; % C/135
+				\node at (220:0.75){$1,1$*}; % I/225
+				
+				% outer ring
+				\node at (60:1.2){$1,3$}; % B/60
+				\node at (240:1.25){$2,0$*}; % K/240
+				\node at (300:1.25){$3,1$*}; % L/300
+				
+				\foreach \x/\y in 
+				{I/D,D/B,H/G,G/F,F/C,C/J,J/I,A/C,E/F,D/G,K/I,L/J}{
+					\draw (\x)--(\y);
+				}
+				\draw circle (1);
+			\end{tikzpicture}
+		\end{center}
+		This provides us with 7 different distances, $(1,3),(3,3),(0,2),(1,1), (2,2),(2,0)$ and $(3,1)$. Consider the fact that $(3,3),(0,2),(1,1),(2,2),(2,0)$, and $(3,1)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves us with 1  non-unique distances of $(1,3)$. Thus, the runner 
+		
+		The 
 		Therefore, the Franklin Graph is locatable in 3 turns with 2 probes.
 	\end{proof}
 	\begin{clm}
@@ -422,39 +554,39 @@
 		
 		Therefore, the Franklin Graph is not locatable with 1 probe.
 	\end{proof}
-% \begin{clm}
-% 	 The Franklin Graph is locatable with 3 probes.
-% \end{clm}
-% \begin{proof}
-% 	We begin by giving the chaser an optimal strategy to win in 3 turns with 3 probes. The chaser should begin by probing $C$, $G$, and $J$, then probe $A$, $D$, $H$. Lastly, probe $C$, $H$, and $J$.
-% \end{proof}
-\newpage
-
-\section{Watkins Snark}
-\begin{clm}
-	The metric dimension of the Watkins snark is 3.
-\end{clm}
-\begin{proof}
-	We begin by giving the chaser an optimal strategy to win in one turn with three probes. The chaser should probe vertices $A$, $L$, $EE$.
+	% \begin{clm}
+		% 	 The Franklin Graph is locatable with 3 probes.
+		% \end{clm}
+	% \begin{proof}
+		% 	We begin by giving the chaser an optimal strategy to win in 3 turns with 3 probes. The chaser should begin by probing $C$, $G$, and $J$, then probe $A$, $D$, $H$. Lastly, probe $C$, $H$, and $J$.
+		% \end{proof}
+	\newpage
 	
-	We will now prove that the metric dimension cannot be 2. Reference Reilly's Cubic Theorem thingy.
-	
-	Therefore, the metric dimension of the Watkins snark is 3.
-\end{proof}
-\begin{clm}
-	The Watkins snark is locatable in 2 turns with 2 probes.
-\end{clm}
-\begin{proof}
-	Therefore, the Watkins snark is locatable in 2 turns with 2 probes.
-\end{proof}
-\begin{clm}
-	The Watkins snark is not locatable with 1 probe.
-\end{clm}
-\begin{proof}
-	It has a $C_5$, unfortunately a formal proof of that is not written up yet, but will be soon.
-	
-	\textbf{*insert $C_5$ formal proof/reference theorem here*}
-	
-	Therefore, the Watkins snark is not locatable with 1 probe.
-\end{proof}
+	\section{Watkins Snark}
+	\begin{clm}
+		The metric dimension of the Watkins snark is 3.
+	\end{clm}
+	\begin{proof}
+		We begin by giving the chaser an optimal strategy to win in one turn with three probes. The chaser should probe vertices $A$, $L$, $EE$.
+		
+		We will now prove that the metric dimension cannot be 2. Reference Reilly's Cubic Theorem thingy.
+		
+		Therefore, the metric dimension of the Watkins snark is 3.
+	\end{proof}
+	\begin{clm}
+		The Watkins snark is locatable in 2 turns with 2 probes.
+	\end{clm}
+	\begin{proof}
+		Therefore, the Watkins snark is locatable in 2 turns with 2 probes.
+	\end{proof}
+	\begin{clm}
+		The Watkins snark is not locatable with 1 probe.
+	\end{clm}
+	\begin{proof}
+		It has a $C_5$, unfortunately a formal proof of that is not written up yet, but will be soon.
+		
+		\textbf{*insert $C_5$ formal proof/reference theorem here*}
+		
+		Therefore, the Watkins snark is not locatable with 1 probe.
+	\end{proof}
 \end{document}
