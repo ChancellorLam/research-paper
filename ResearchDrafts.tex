@@ -694,11 +694,76 @@
 	\newpage
 	
 	\section{Watkins Snark}
+	\begin{center}
+		\begin{tikzpicture}[scale=1]
+			% create 5 center points of each cluster
+			\foreach \name/\angle in 
+			{AA/18, G/90, Q/162, KK/234, UU/306}{
+				\coordinate (\name) at (\angle:5);
+				\fill (\name) circle (1mm);
+				\node at (\angle:4.6){$\name$};
+			}
+			
+			% what the heck has this mess become???
+			\foreach \name/\offset/\leftlabels/\rightlabels/\toplabels in
+			{G/0/{D/135/1.414, F/180/1, I/225/1.414}/{E/45/1.414, H/0/1}/{A/135/2.828, B/90/2, C/45/2.828},
+				Q/72/{N/135/1.414, P/180/1, S/225/1.414}/{O/45/1.414, R/0/1}/{K/135/2.828, L/90/2, M/45/2.828},
+				KK/144/{HH/135/1.414, JJ/180/1, MM/225/1.414}/{II/45/1.414, LL/0/1}/{EE/135/2.828, FF/90/2, GG/45/2.828},
+				UU/216/{RR/135/1.414, TT/180/1, WW/225/1.414}/{SS/45/1.414, VV/0/1}/{OO/135/2.828, PP/90/2, QQ/45/2.828},
+				AA/288/{X/135/1.414, Z/180/1, CC/225/1.414}/{Y/45/1.414, BB/0/1}/{U/135/2.828, V/90/2, W/45/2.828}}{
+				\begin{scope}[shift={(\name)}]
+					% left side
+					\foreach \name/\angle/\distance in
+					\leftlabels {
+						\coordinate (\name) at ({\angle + \offset}:\distance);
+						\fill (\name) circle (1mm);
+						\begin{scope}[shift={(\name)}]
+							\node at ({180 + \offset}:0.4){$\name$};
+						\end{scope}
+					}
+					
+					\foreach \name/\angle/\distance in
+					\rightlabels {
+						\coordinate (\name) at ({\angle + \offset}:\distance);
+						\fill (\name) circle (1mm);
+						\begin{scope}[shift={(\name)}]
+							\node at ({0 + \offset}:0.4){$\name$};
+						\end{scope}
+					}
+					
+					\foreach \name/\angle/\distance in
+					\toplabels {
+						\coordinate (\name) at ({\angle + \offset}:\distance);
+						\fill (\name) circle (1mm);
+						\begin{scope}[shift={(\name)}]
+							\node at ({90 + \offset}:0.4){$\name$};
+						\end{scope}
+					}
+					
+				\end{scope}
+			}
+			
+			% the lower right labels in the above orientation will be in the way of an edge, create the lower right nodes and labels here
+			\foreach \s/\n/\o/\d in {G/J/90/1.414, Q/T/162/1.414, KK/NN/234/1.414, UU/XX/306/1.414, AA/DD/18/1.414}{
+				\begin{scope}[shift={(\s)}]
+					\coordinate (\n) at ({315 - 90 + \o}:\d);
+					\fill (\n) circle (1mm);
+					\node at ({315 - 95 + \o}:1.814){$\n$};
+				\end{scope}
+			}
+			
+			% edges
+			\foreach \x/\y in
+			{A/B, A/D, A/T, B/A, B/C, B/G, C/B, C/E, C/WW, D/A, D/E, D/F, E/C, E/D, E/H, F/D, F/G, F/I, G/B, G/F, G/H, H/E, H/G, H/J, I/F, I/J, I/GG, J/H, J/I, J/U, K/L, K/N, K/NN, L/K, L/M, L/Q, M/L, M/O, M/CC, N/K, N/O, N/P, O/M, O/N, O/R, P/N, P/Q, P/S, Q/L, Q/P, Q/R, R/O, R/Q, R/T, S/P, S/T, S/QQ, T/A, T/R, T/S, U/J, U/V, U/X, V/U, V/W, V/AA, W/V, W/Y, W/MM, X/U, X/Y, X/Z, Y/W, Y/X, Y/BB, Z/X, Z/AA, Z/CC, AA/V, AA/Z, AA/BB, BB/Y, BB/AA, BB/DD, CC/M, CC/Z, CC/DD, DD/BB, DD/CC, DD/OO, EE/XX, EE/FF, EE/HH, FF/EE, FF/GG, FF/KK, GG/I, GG/FF, GG/II, HH/EE, HH/II, HH/JJ, II/GG, II/HH, II/LL, JJ/HH, JJ/KK, JJ/MM, KK/FF, KK/JJ, KK/LL, LL/II, LL/KK, LL/NN, MM/W, MM/JJ, MM/NN, NN/K, NN/LL, NN/MM, OO/DD, OO/PP, OO/RR, PP/OO, PP/QQ, PP/UU, QQ/S, QQ/PP, QQ/SS, RR/OO, RR/SS, RR/TT, SS/QQ, SS/RR, SS/VV, TT/RR, TT/UU, TT/WW, UU/PP, UU/TT, UU/VV, VV/SS, VV/UU, VV/XX, WW/C, WW/TT, WW/XX, XX/EE, XX/VV, XX/WW}{
+				\draw (\x)--(\y);
+			}
+		\end{tikzpicture}
+	\end{center}
 	\begin{clm}
 		The metric dimension of the Watkins snark is 3.
 	\end{clm}
 	\begin{proof}
-		We begin by giving the chaser an optimal strategy to win in one turn with three probes. The chaser should probe vertices $A$, $L$, $EE$.
+		We begin by giving the chaser an optimal strategy to win in one turn with three probes. The chaser should probe vertices $A$, $U$, $NN$.
 		
 		We will now prove that the metric dimension cannot be 2. Reference Reilly's Cubic Theorem thingy.
 		
