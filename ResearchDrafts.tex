@@ -208,7 +208,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 6 different distances, $(0,3),(3,0),(1,2),(2,1),(2,3)$ and $(3,2)$. Consider the fact that $(0,3)$ and $(3,0)$ are unique distances. It follows then that if the runner is on vertices $E$ or $H$, it must be the case that the runner will be caught. This leaves us with 4 different non-unique distances of $(1,2),(2,1),(2,3),$ and $(3,2)$. We will now proceed by cases.
+		This provides the chaser with 6 different distances, $(0,3),(3,0),(1,2),(2,1),(2,3)$ and $(3,2)$. Consider the fact that $(0,3)$ and $(3,0)$ are unique distances. It follows then that if the runner is on vertices $E$ or $H$, it must be the case that the runner will be caught. This leaves the chaser with 4 different non-unique distances of $(1,2),(2,1),(2,3),$ and $(3,2)$. We will now proceed by cases.
 		
 		\textbf{Case 1:} Consider the case where the chaser has been returned a distance of $(1,2)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $A,F$, or $K$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,C,G,I,L$. Thus, the runner could potentially be located at any of the vertices $A,B,C,F,G,I,K,L$.
 		
@@ -258,7 +258,7 @@
 			\end{tikzpicture}
 		\end{center}
 		
-		This again provides us with 6 different distances, $(2,2),(3,3),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(2,2),(3,3),(0,2)$ and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,F,$ or $K$, it must be the case that the runner will be caught. This leaves us with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
+		This again provides the chaser with 6 different distances, $(2,2),(3,3),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(2,2),(3,3),(0,2)$ and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,F,$ or $K$, it must be the case that the runner will be caught. This leaves the chaser with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
 		
 		\textbf{Subcase 1.1:} Consider the case where the chaser has been returned a distance of $(1,3)$ from probing vertices $F$ and $K$. Then the runner must either be on vertex $C$ or vertex $G$. Recall that the runner cannot move on to vertex $F$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $A,D,F,H,J$. Thus, the runner could potentially be located at any of the vertices $A,C,D,G,H,J$.
 		
@@ -305,7 +305,7 @@
 			\end{tikzpicture}
 		\end{center}
 		
-		This provides us with 7 different distances, $(1,3),(0,2),(3,1),(2,2),(3,3),(2,0)$, and $(1,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 7 different distances, $(1,3),(0,2),(3,1),(2,2),(3,3),(2,0)$, and $(1,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Subcase 1.2:} Consider the case where the chaser has been returned a distance of $(3,1)$ from probing vertices $F$ and $K$. Then the runner must either be on vertex $I$ or vertex $L$. Recall that the runner cannot move on to vertex $F$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $D,H,J$. Thus, the runner could potentially be located at any of the vertices $D,H,I,J,L$.
 		
@@ -350,7 +350,7 @@
 			\end{tikzpicture}
 		\end{center}
 		
-		This provides us with 5 different distances, $(0,2),(2,2),(1,1),(2,0)$ and $(3,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 5 different distances, $(0,2),(2,2),(1,1),(2,0)$ and $(3,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Case 2:} Consider the case where the chaser has been returned a distance of $(2,1)$ from the first probes on vertices $E$ and $H$. Then the runner must be at one of the vertices $B,G$, or $L$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,B,D,F,G,J,K,L$.
 		
@@ -399,7 +399,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This again provides us with 6 different distances, $(3,3),(2,2),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(3,3),(2,2),(0,2)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,G,$ or $L$, it must be the case that the runner will be caught. This leaves us with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
+		This again provides the chaser with 6 different distances, $(3,3),(2,2),(1,3),(0,2),(3,1),$ and $(2,0)$. Consider the fact that $(3,3),(2,2),(0,2)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $A,B,G,$ or $L$, it must be the case that the runner will be caught. This leaves the chaser with 2 different non-unique distances of $(1,3)$ and $(3,1)$. We will again proceed by cases.
 		
 		\textbf{Subcase 2.1} Consider the case where the chaser has been returned a distance of $(1,3)$ from probing vertices $G$ and $L$. Then the runner must either be on vertex $D$ or vertex $F$. Recall that the runner cannot move on to vertex $G$ or vertex $L$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,C,E,I$. Thus, the runner could potentially be located at any of the vertices $B,C,D,E,F,I$.
 		
@@ -445,7 +445,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 7 different distances, $(3,3),(1,3),(2,2),(1,1),(0,2),(3,1),$ and $(2,0)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 7 different distances, $(3,3),(1,3),(2,2),(1,1),(0,2),(3,1),$ and $(2,0)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Subcase 2.2} Consider the case where the chaser has returned a distance of $(3,1)$ from probing vertices $G$ and $L$. Then the runner must either be on vertex $J$ or vertex $K$. Recall that the runner cannot move on to vertex $G$ or vertex $L$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices, $C,E,I$. Thus, the runner could potentially be located at any of the vertices, $C,E,I,J,K$.
 		
@@ -489,7 +489,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 5 different distances, $(0,2),(2,2),(2,0),(1,1)$ and $(3,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 5 different distances, $(0,2),(2,2),(2,0),(1,1)$ and $(3,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Case 3:} Consider the case where the chaser has been returned a distance of $(2,3)$ from the first probes on vertices $E$ and $H$. Then the runner must be at vertex $C$ or vertex $I$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $A,D,F,J,K$. Thus, the runner could potentially be located at any of the vertices $A,C,D,F,I,J,K,$.
 		
@@ -538,7 +538,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 7 different distances, $(1,3),(0,2),(3,3),(2,2), (1,1), (3,1)$ and $(2,0)$. Consider the fact that $(0,2),(3,3),(2,2),(1,1),(3,1)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves us with 1 non-unique distance of $(1,3)$. Then the runner must either be on vertex $A$ or vertex $F$. Recall that the runner cannot move on to vertex $C$ or vertex $L$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,E,G$. Thus, the runner could potentially be located at any of the vertices $A,B,E,F,G$.
+		This provides the chaser with 7 different distances, $(1,3),(0,2),(3,3),(2,2), (1,1), (3,1)$ and $(2,0)$. Consider the fact that $(0,2),(3,3),(2,2),(1,1),(3,1)$, and $(2,0)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves the chaser with 1 non-unique distance of $(1,3)$. Then the runner must either be on vertex $A$ or vertex $F$. Recall that the runner cannot move on to vertex $C$ or vertex $L$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,E,G$. Thus, the runner could potentially be located at any of the vertices $A,B,E,F,G$.
 		
 		The chaser should now probe vertices $A$ and $K$.
 		\begin{center}
@@ -581,7 +581,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 6 different distances, $(0,2),(1,3),(1,1),(2,2),(3,3)$ and $(2,0)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 6 different distances, $(0,2),(1,3),(1,1),(2,2),(3,3)$ and $(2,0)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		\textbf{Case 4:} Consider the case where the chaser has been returned a distance of $(3,2)$ from the first probes on vertices $E$ and $H$. Then the runner must be at vertex $D$ or vertex $J$. Recall that the runner cannot move on to $E$ or $H$ because of the no backtracking condition. It follows then that the runner then has the ability to move to any of the neighboring vertices $B,C,G,I,L$. Thus, the runner could potentially be located at any of the vertices $B,C,D,G,I,J,L$.
 		
@@ -630,7 +630,7 @@
 				\draw circle (1);
 			\end{tikzpicture}
 		\end{center}
-		This provides us with 7 different distances, $(1,3),(3,3),(0,2),(1,1), (2,2),(2,0)$ and $(3,1)$. Consider the fact that $(3,3),(0,2),(1,1),(2,2),(2,0)$, and $(3,1)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves us with 1 non-unique distance of $(1,3)$. Then the runner must either be on vertex $B$ or vertex $G$. Recall that the runner cannot move on to vertex $D$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $A,F,H$. Thus, the runner could potentially be located at any of the vertices $A,B,F,G,H$.
+		This provides the chaser with 7 different distances, $(1,3),(3,3),(0,2),(1,1), (2,2),(2,0)$ and $(3,1)$. Consider the fact that $(3,3),(0,2),(1,1),(2,2),(2,0)$, and $(3,1)$ are unique distances. It follows then that if the runner is on vertices $C,D,I,J,K$ or $L$, it must be the case that the runner will be caught. This leaves the chaser with 1 non-unique distance of $(1,3)$. Then the runner must either be on vertex $B$ or vertex $G$. Recall that the runner cannot move on to vertex $D$ or vertex $K$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $A,F,H$. Thus, the runner could potentially be located at any of the vertices $A,B,F,G,H$.
 		
 		The chaser should now probe vertices $A$ and $B$.
 		\begin{center}
@@ -673,7 +673,7 @@
 			\end{tikzpicture}
 		\end{center}
 		
-		This provides us with 6 different distances, $(0,1),(1,0),(2,3),(3,2)$ and $(2,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		This provides the chaser with 6 different distances, $(0,1),(1,0),(2,3),(3,2)$ and $(2,1)$. Consider the fact that these are all unique distances. It follows then that the runner must be caught.
 		
 		Therefore, the Franklin Graph is locatable in 3 turns with 2 probes.
 	\end{proof}
@@ -765,7 +765,12 @@
 	\begin{proof}
 		We begin by giving the chaser an optimal strategy to win in one turn with three probes. The chaser should probe vertices $A$, $U$, $NN$.
 		
+		This will result in unique distances for all vertices. Since every vertex has a unique distance, it must be the case that the runner is located. Since it is the case that the chaser is able to locate the runner in 1 turn with 3 probes, it logically follows that the metric dimension of the Watkins snark is less than or equal to 3.
+		Thus, the metric dimension must be at most 3.
+		
 		We will now prove that the metric dimension cannot be 2. Reference Reilly's Cubic Theorem thingy.
+		
+		Since the metric dimension of the Watkins snark is less than or equal to 3 and the metric dimension of the Franklin graph cannot be 2, it must be the case where the metric dimension is greater than 2 and less than or equal to 3.
 		
 		Therefore, the metric dimension of the Watkins snark is 3.
 	\end{proof}
@@ -773,6 +778,58 @@
 		The Watkins snark is locatable in 2 turns with 2 probes.
 	\end{clm}
 	\begin{proof}
+		We begin by giving the chaser a strategy to win in 2 turns with 2 probes. The chaser should begin by probing the vertices $A$ and $FF$.
+		
+		This provides the chaser with 31 unique distances and 8 non-unique distances. The non-unique distances are $(2,4),(3,6),(4,4),(4,5),(5,4),(6,2),(6,5),$ and $(7,6)$. The runner is a vertex with a unique distance, then it must be the case that the runner will be caught. Thus, the runner can only be on a vertex with a non-unique distance. We will now proceed by cases.
+		
+		\textbf{Case 1:} Consider the case where the chaser has been returned a distance of $(2,4)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $C$ or $G$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $B,E,F,H,WW$. Thus, the runner could potentially be located at any of the vertices $B,C,E,F,G,H,WW$.
+		
+		The chaser should now probe vertices $A$ and $GG$.
+		
+		This provides the chaser 7 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 2:} Consider the case where the chaser has been returned a distance of $(3,6)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $O$, $Q$ or $P$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $M,R,L,N,S$. Thus, the runner could potentially be located at any of the vertices $M,O,R,L,Q,N,P,S$.
+		
+		The chaser should now probe vertices $K$ and $QQ$.
+		
+		This provides the chaser 7 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 3:} Consider the case where the chaser has been returned a distance of $(4,4)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $TT$ or $SS$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $WW,VV,UU,RR,QQ$. Thus, the runner could potentially be located at any of the vertices $WW,VV,UU,TT,SS,RR,QQ$.
+		
+		The chaser should now probe vertices $C$ and $OO$.
+		
+		This provides the chaser 7 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 4:} Consider the case where the chaser has been returned a distance of $(4,5)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $L$, $N$, or $PP$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $M,O,Q,P,K,UU,QQ,OO$. Thus, the runner could potentially be located at any of the vertices $M,O,L,Q,N,P,K,UU,QQ,PP,OO$.
+		
+		The chaser should now probe vertices $A$ and $M$.
+		
+		This provides the chaser 11 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 5:} Consider the case where the chaser has been returned a distance of $(5,4)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $U$, $K$, or $UU$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $J,X,L,V,N,NN,VV,TT,PP$. Thus, the runner could potentially be located at any of the vertices $J,U,X,L,V,N,K,NN,VV,UU,TT,PP$.
+		
+		The chaser should now probe vertices $NN$ and $PP$.
+		
+		This provides the chaser 12 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 6:} Consider the case where the chaser has been returned a distance of $(6,2)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $LL$ or $HH$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $NN,KK,JJ,II,EE$. Thus, the runner could potentially be located at any of the vertices $NN,LL,KK,JJ,II,HH,EE$.
+		
+		The chaser should now probe vertices $W$ and $EE$.
+		
+		This provides the chaser 7 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 7:} Consider the case where the chaser has been returned a distance of $(6,5)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $X$ or $V$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $U,Z,AA,Y,W$. Thus, the runner could potentially be located at any of the vertices $U,Z,X,AA,V,Y,W$.
+		
+		The chaser should now probe vertices $M$ and $U$.
+		
+		This provides the chaser 7 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
+		\textbf{Case 8:} Consider the case where the chaser has been returned a distance of $(7,6)$ from the first probes on vertices $A$ and $FF$. Then the runner must be at one of the vertices $AA$ or $BB$. Recall that the runner cannot move on to $A$ or $FF$ because of the no backtracking condition. It follows then that the runner has the ability to move to any of the neighboring vertices $Z,V,DD,Y$. Thus, the runner could potentially be located at any of the vertices $Z,AA,V,DD,BB,Y$.
+		
+		The chaser should now probe vertices $M$ and $U$.
+		
+		This provides the chaser 6 different distances, . Consider the fact that these are all unique distances. It follows then that the runner must be caught.
+		
 		Therefore, the Watkins snark is locatable in 2 turns with 2 probes.
 	\end{proof}
 	\begin{clm}
